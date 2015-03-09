@@ -40,8 +40,7 @@ namespace MvcMovie.Controllers
             {
                 movies = movies.Where(x => x.Genre == movieGenre);
             }
-            User.Identity.GetUserId();
-            this.ControllerContext.HttpContext.User.Identity.GetUserId<string>();
+            //User.Identity.GetUserId();
             return View(movies);
         }
        
